@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trust Energy BD</title>
+    <title>Trust Energy And Engineering Limited</title>
+    <link rel="icon" type="image/jpeg" href="/mnt/data/favicon.jpg">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #141414;
+            background-image: url('https://images.unsplash.com/photo-1521185496955-15097b20c5fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
             color: white;
         }
         header {
@@ -130,7 +135,7 @@
     <div id="photos" class="container">
         <h2>Photos</h2>
         <div class="photo-gallery">
-            <img src="https://www.facebook.com/photo/?fbid=919698836623526&set=a.532973075296106" alt="Photo 1">
+            <img src="https://via.placeholder.com/200" alt="Photo 1">
             <img src="https://via.placeholder.com/200" alt="Photo 2">
             <img src="https://via.placeholder.com/200" alt="Photo 3">
             <img src="https://via.placeholder.com/200" alt="Photo 4">
@@ -157,4 +162,3 @@
     </footer>
 </body>
 </html>
-
