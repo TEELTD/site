@@ -130,7 +130,7 @@
     <div id="photos" class="container">
         <h2>Photos</h2>
         <div class="photo-gallery">
-            <img src="https://via.placeholder.com/200" alt="Photo 1">
+            <img src="https://www.facebook.com/photo/?fbid=919698836623526&set=a.532973075296106" alt="Photo 1">
             <img src="https://via.placeholder.com/200" alt="Photo 2">
             <img src="https://via.placeholder.com/200" alt="Photo 3">
             <img src="https://via.placeholder.com/200" alt="Photo 4">
