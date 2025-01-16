@@ -99,38 +99,26 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
             cursor: pointer;
-            transition: transform 0.3s ease;
         }
-        .photo-gallery img:hover {
-            transform: scale(1.05);
-        }
-        .popup {
+        .modal {
+            display: none;
             position: fixed;
-            top: 0;
+            z-index: 1000;
             left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
+            background-color: rgba(0, 0, 0, 0.9);
             justify-content: center;
             align-items: center;
-            z-index: 1000;
         }
-        .popup img {
+        .modal img {
             max-width: 90%;
             max-height: 90%;
-            border-radius: 10px;
+            border-radius: 5px;
         }
-        .popup:target {
+        .modal:target {
             display: flex;
-        }
-        .popup-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 2rem;
-            color: white;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -168,18 +156,27 @@
     <div id="photos" class="container">
         <h2>Photos</h2>
         <div class="photo-gallery">
-            <a href="#popup1"><img src="https://via.placeholder.com/200" alt="Photo 1"></a>
-            <a href="#popup2"><img src="https://via.placeholder.com/200" alt="Photo 2"></a>
-            <a href="#popup3"><img src="https://via.placeholder.com/200" alt="Photo 3"></a>
-            <a href="#popup4"><img src="https://via.placeholder.com/200" alt="Photo 4"></a>
-            <a href="#popup5"><img src="https://via.placeholder.com/200" alt="Photo 5"></a>
-            <a href="#popup6"><img src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/447977846_919698833290193_5163737312525366358_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGZ6Icsv0aoYdOKBsT4uNJgRZYsjWWSsgtFliyNZZKyC-i3-rstnP9wog6tStOC_A08k5NUcQDY6eyLolPbAZ4G&_nc_ohc=LiOlkHrp7mAQ7kNvgGR-9ui&_nc_oc=Adj68vtdCB_imX3oDI7pk-aQI1dk5FxmfrZyuR1c_E6l3pcpS3s3Ky8Tk1kA2Tav5Xc&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=AW7lFDzhRrElrOJnAWCV32B&oh=00_AYAiuYR8RIKrMfYV03Ta1OYE97sTpIrErIL5f7E-XrQiFA&oe=678EC659" alt="Photo 6"></a>
+            <a href="#modal1"><img src="https://via.placeholder.com/200" alt="Photo 1"></a>
+            <a href="#modal2"><img src="https://via.placeholder.com/200" alt="Photo 2"></a>
+            <a href="#modal3"><img src="https://via.placeholder.com/200" alt="Photo 3"></a>
+            <a href="#modal4"><img src="https://via.placeholder.com/200" alt="Photo 4"></a>
+            <a href="#modal5"><img src="https://via.placeholder.com/200" alt="Photo 5"></a>
+            <a href="#modal6"><img src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/447977846_919698833290193_5163737312525366358_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGZ6Icsv0aoYdOKBsT4uNJgRZYsjWWSsgtFliyNZZKyC-i3-rstnP9wog6tStOC_A08k5NUcQDY6eyLolPbAZ4G&_nc_ohc=LiOlkHrp7mAQ7kNvgGR-9ui&_nc_oc=Adj68vtdCB_imX3oDI7pk-aQI1dk5FxmfrZyuR1c_E6l3pcpS3s3Ky8Tk1kA2Tav5Xc&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=AW7lFDzhRrElrOJnAWCV32B&oh=00_AYAiuYR8RIKrMfYV03Ta1OYE97sTpIrErIL5f7E-XrQiFA&oe=678EC659" alt="Photo 6"></a>
         </div>
-        <p>Visit our <a href="https://www.facebook.com/trustenergybd/photos" target="_blank" style="color: #e50914;">Facebook page</a> for more photos.</p>
-
-        <div id="popup1" class="popup">
-            <a href="#photos" class="popup-close">&times;</a>
+        <div id="modal1" class="modal">
             <img src="https://via.placeholder.com/200" alt="Photo 1">
         </div>
-        <div id="popup2" class="popup">
-            <a href="#photos" class="popup-close">&
+        <div id="modal2" class="modal">
+            <img src="https://via.placeholder.com/200" alt="Photo 2">
+        </div>
+        <div id="modal3" class="modal">
+            <img src="https://via.placeholder.com/200" alt="Photo 3">
+        </div>
+        <div id="modal4" class="modal">
+            <img src="https://via.placeholder.com/200" alt="Photo 4">
+        </div>
+        <div id="modal5" class="modal">
+            <img src="https://via.placeholder.com/200" alt="Photo 5">
+        </div>
+        <div id="modal6" class="modal">
+            <img src="https://scontent.fdac142-
