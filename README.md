@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #141414;
-            background-image: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+            background-image: url('https://images.unsplash.com/photo-1616014980403-78eff61bca4f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
