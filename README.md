@@ -98,6 +98,39 @@
             height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .popup:target {
+            display: flex;
+        }
+        .popup-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -135,31 +168,18 @@
     <div id="photos" class="container">
         <h2>Photos</h2>
         <div class="photo-gallery">
-            <img src="https://via.placeholder.com/200" alt="Photo 1">
-            <img src="https://via.placeholder.com/200" alt="Photo 2">
-            <img src="https://via.placeholder.com/200" alt="Photo 3">
-            <img src="https://via.placeholder.com/200" alt="Photo 4">
-            <img src="https://via.placeholder.com/200" alt="Photo 5">
-            <img src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/447977846_919698833290193_5163737312525366358_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGZ6Icsv0aoYdOKBsT4uNJgRZYsjWWSsgtFliyNZZKyC-i3-rstnP9wog6tStOC_A08k5NUcQDY6eyLolPbAZ4G&_nc_ohc=LiOlkHrp7mAQ7kNvgGR-9ui&_nc_oc=Adj68vtdCB_imX3oDI7pk-aQI1dk5FxmfrZyuR1c_E6l3pcpS3s3Ky8Tk1kA2Tav5Xc&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=AW7lFDzhRrElrOJnAWCV32B&oh=00_AYAiuYR8RIKrMfYV03Ta1OYE97sTpIrErIL5f7E-XrQiFA&oe=678EC659" alt="Photo 6">
+            <a href="#popup1"><img src="https://via.placeholder.com/200" alt="Photo 1"></a>
+            <a href="#popup2"><img src="https://via.placeholder.com/200" alt="Photo 2"></a>
+            <a href="#popup3"><img src="https://via.placeholder.com/200" alt="Photo 3"></a>
+            <a href="#popup4"><img src="https://via.placeholder.com/200" alt="Photo 4"></a>
+            <a href="#popup5"><img src="https://via.placeholder.com/200" alt="Photo 5"></a>
+            <a href="#popup6"><img src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/447977846_919698833290193_5163737312525366358_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGZ6Icsv0aoYdOKBsT4uNJgRZYsjWWSsgtFliyNZZKyC-i3-rstnP9wog6tStOC_A08k5NUcQDY6eyLolPbAZ4G&_nc_ohc=LiOlkHrp7mAQ7kNvgGR-9ui&_nc_oc=Adj68vtdCB_imX3oDI7pk-aQI1dk5FxmfrZyuR1c_E6l3pcpS3s3Ky8Tk1kA2Tav5Xc&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=AW7lFDzhRrElrOJnAWCV32B&oh=00_AYAiuYR8RIKrMfYV03Ta1OYE97sTpIrErIL5f7E-XrQiFA&oe=678EC659" alt="Photo 6"></a>
         </div>
         <p>Visit our <a href="https://www.facebook.com/trustenergybd/photos" target="_blank" style="color: #e50914;">Facebook page</a> for more photos.</p>
-    </div>
 
-    <div id="contact" class="container">
-        <h2>Contact Us</h2>
-        <div class="contact-form">
-            <form action="https://formsubmit.co/shuvroshada52@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <div id="popup1" class="popup">
+            <a href="#photos" class="popup-close">&times;</a>
+            <img src="https://via.placeholder.com/200" alt="Photo 1">
         </div>
-        <p>Follow us on <a href="https://www.facebook.com/trustenergybd" target="_blank" style="color: #e50914;">Facebook</a>.</p>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Trust Energy BD. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <div id="popup2" class="popup">
+            <a href="#photos" class="popup-close">&
