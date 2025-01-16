@@ -81,6 +81,25 @@
         .contact-form button:hover {
             background-color: #b20710;
         }
+        /* Photo Transition Section */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+        .slideshow-container img {
+            width: 100%;
+            display: none;
+            animation: fade 6s infinite;
+        }
+        .slideshow-container img:first-child {
+            display: block;
+        }
+        @keyframes fade {
+            0%, 20% { opacity: 1; }
+            25%, 100% { opacity: 0; }
+        }
     </style>
 </head>
 <body>
