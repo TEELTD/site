@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #141414;
-            background-image: url('https://images.unsplash.com/photo-1521185496955-15097b20c5fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+            background-image: url('https://images.unsplash.com/photo-1616014980403-78eff61bca4f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -98,6 +98,27 @@
             height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 5px;
+        }
+        .modal:target {
+            display: flex;
         }
     </style>
 </head>
@@ -135,30 +156,27 @@
     <div id="photos" class="container">
         <h2>Photos</h2>
         <div class="photo-gallery">
+            <a href="#modal1"><img src="https://via.placeholder.com/200" alt="Photo 1"></a>
+            <a href="#modal2"><img src="https://via.placeholder.com/200" alt="Photo 2"></a>
+            <a href="#modal3"><img src="https://via.placeholder.com/200" alt="Photo 3"></a>
+            <a href="#modal4"><img src="https://via.placeholder.com/200" alt="Photo 4"></a>
+            <a href="#modal5"><img src="https://via.placeholder.com/200" alt="Photo 5"></a>
+            <a href="#modal6"><img src="https://scontent.fdac142-1.fna.fbcdn.net/v/t39.30808-6/447977846_919698833290193_5163737312525366358_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGZ6Icsv0aoYdOKBsT4uNJgRZYsjWWSsgtFliyNZZKyC-i3-rstnP9wog6tStOC_A08k5NUcQDY6eyLolPbAZ4G&_nc_ohc=LiOlkHrp7mAQ7kNvgGR-9ui&_nc_oc=Adj68vtdCB_imX3oDI7pk-aQI1dk5FxmfrZyuR1c_E6l3pcpS3s3Ky8Tk1kA2Tav5Xc&_nc_zt=23&_nc_ht=scontent.fdac142-1.fna&_nc_gid=AW7lFDzhRrElrOJnAWCV32B&oh=00_AYAiuYR8RIKrMfYV03Ta1OYE97sTpIrErIL5f7E-XrQiFA&oe=678EC659" alt="Photo 6"></a>
+        </div>
+        <div id="modal1" class="modal">
             <img src="https://via.placeholder.com/200" alt="Photo 1">
+        </div>
+        <div id="modal2" class="modal">
             <img src="https://via.placeholder.com/200" alt="Photo 2">
+        </div>
+        <div id="modal3" class="modal">
             <img src="https://via.placeholder.com/200" alt="Photo 3">
+        </div>
+        <div id="modal4" class="modal">
             <img src="https://via.placeholder.com/200" alt="Photo 4">
+        </div>
+        <div id="modal5" class="modal">
             <img src="https://via.placeholder.com/200" alt="Photo 5">
         </div>
-        <p>Visit our <a href="https://www.facebook.com/trustenergybd/photos" target="_blank" style="color: #e50914;">Facebook page</a> for more photos.</p>
-    </div>
-
-    <div id="contact" class="container">
-        <h2>Contact Us</h2>
-        <div class="contact-form">
-            <form action="https://formsubmit.co/shuvroshada52@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-        <p>Follow us on <a href="https://www.facebook.com/trustenergybd" target="_blank" style="color: #e50914;">Facebook</a>.</p>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Trust Energy BD. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <div id="modal6" class="modal">
+            <img src="https://scontent.fdac142-
