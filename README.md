@@ -116,7 +116,7 @@
     <div id="contact" class="container">
         <h2>Contact Us</h2>
         <div class="contact-form">
-            <form action="" method="POST">
+            <form action="https://formsubmit.co/shuvroshada52@gmail.com" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
